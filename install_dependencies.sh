@@ -55,13 +55,13 @@ cd build
 git checkout master; git pull
 rm -f CMakeCache.txt
 echo "YOU ARE HERE 1"
-cmake .. -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_BUILD_TYPE=Release --local
+cmake .. -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_BUILD_TYPE=Release
 echo "YOU ARE HERE 2"
 RET=$?; if [ $RET -ne 0 ]; then echo "Error. Exiting."; exit $RET; fi
-make --local
+make 
 echo "YOU ARE HERE 2.1"
 RET=$?; if [ $RET -ne 0 ]; then echo "Error. Exiting."; exit $RET; fi
-make install --local
+make install 
 echo "YOU ARE HERE 2.2"
 RET=$?; if [ $RET -ne 0 ]; then echo "Error. Exiting."; exit $RET; fi
 
