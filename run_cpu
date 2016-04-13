@@ -44,5 +44,5 @@ echo $args
 
 cd dqn
 #../torch/bin/luajit train_agent.lua $args
-$GABI=../torch7-2016.03.10
-$GABI/bin/luajit train_agent.lua $args
+///hpc/sw/torch7-2016.03.10/bin/luajit train_agent.lua $args
+
